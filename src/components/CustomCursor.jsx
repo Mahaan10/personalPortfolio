@@ -20,7 +20,7 @@ function CustomCursor() {
 
   return (
     <div
-      className="absolute w-5 h-5 bg-sky-600 rounded-[50%] pointer-events-none transform translate-3d z-10 transition-all duration-[0.1ms] ease-in-out"
+      className="custom-cursor"
       style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
     ></div>
   );

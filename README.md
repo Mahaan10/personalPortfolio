@@ -1,8 +1,5 @@
-# React + Vite
+https://preview.themeforest.net/item/lilon-personal-portfolio-reactjs-template/full_screen_preview/47610111?_ga=2.193472173.1264455078.1740483041-1115993657.1708007056
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://cavani-react.vercel.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://preview.themeforest.net/item/davis-personal-portfolio-reactjs-template/full_screen_preview/47231030?_ga=2.131435791.1264455078.1740483041-1115993657.1708007056
