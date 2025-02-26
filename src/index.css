@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap");
+
 @import "tailwindcss";
 
-
+@theme {
+  --font-header-title: "Oswald";
+  --font-ibm: "IBM Plex Sans";
+  --color-indigo-dye: #00416a;
+  --color-black-russian: #0d0b1c;
+  --color-chinese-black: #100e24;
+  --color-rich-black: #030211;
+}
 
 .custom-cursor {
   position: fixed;

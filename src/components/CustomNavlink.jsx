@@ -4,7 +4,7 @@ function CustomNavlink({ children, to }) {
   const location = useLocation();
 
   const navlinkClassName =
-    "pl-5 pr-3 py-2 relative flex items-center justify-between transition-all duration-300 ease-in-out";
+    "pl-5 pr-3 py-2 relative flex items-center justify-between transition-all duration-700 ease-in-out";
 
   // Check if the current pathname matches the NavLink's destination
   const isActive = location.pathname === to;
@@ -13,7 +13,7 @@ function CustomNavlink({ children, to }) {
     <NavLink
       to={to}
       className={`${navlinkClassName} ${
-        isActive ? "opacity-100 transition-all duration-700" : "opacity-85"
+        isActive ? "opacity-100" : "opacity-50"
       }`}
     >
       {/* Text part of the NavLink */}
@@ -21,9 +21,7 @@ function CustomNavlink({ children, to }) {
 
       {/* Conditionally render the SVG for active links */}
       <svg
-        className={
-          isActive ? "transition-opacity duration-700 opacity-100" : "opacity-0"
-        } // Show the SVG only if the link is active
+        className={isActive ? " opacity-100" : "opacity-0"} // Show the SVG only if the link is active
         width="35"
         height="35"
         viewBox="0 0 46 42"
