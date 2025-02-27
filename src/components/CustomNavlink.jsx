@@ -13,7 +13,7 @@ function CustomNavlink({ children, to }) {
     <NavLink
       to={to}
       className={`${navlinkClassName} ${
-        isActive ? "opacity-100" : "opacity-50"
+        isActive ? "opacity-100" : "opacity-50 hover:opacity-85"
       }`}
     >
       {/* Text part of the NavLink */}
@@ -21,7 +21,9 @@ function CustomNavlink({ children, to }) {
 
       {/* Conditionally render the SVG for active links */}
       <svg
-        className={isActive ? " opacity-100" : "opacity-0"} // Show the SVG only if the link is active
+        className={`${
+          isActive ? " opacity-100" : "opacity-0"
+        } transition-all duration-700`} // Show the SVG only if the link is active
         width="35"
         height="35"
         viewBox="0 0 46 42"
