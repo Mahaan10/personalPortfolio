@@ -26,7 +26,7 @@ function Services() {
 export default Services;
 
 function Accordion() {
-  const [openIndex, setOpenIndex] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -42,19 +42,19 @@ function Accordion() {
     {
       title: "UI/UX & Component-Based Design",
       content:
-        "Creating visually appealing, intuitive, and reusable UI components to enhance user experience.",
+        "I build visually appealing, interactive, and user-friendly interfaces with a focus on design consistency and usability. My approach is component-based, meaning every UI element is reusable, making development faster and more scalable.",
       image: "/images/ui-design.gif",
     },
     {
       title: "Performance & API Integration",
       content:
-        "Optimizing websites for speed and efficiency, ensuring smooth API integrations.",
+        "I ensure your website runs fast and efficiently by optimizing performance and integrating backend APIs smoothly using Axios and React Query. From real-time data fetching to caching strategies, I make sure everything works seamlessly.",
       image: "/images/performance-optimization.gif",
     },
     {
       title: "Deployment & Best Practices",
       content:
-        "Using Git, CI/CD, and best practices to deploy and maintain scalable projects.",
+        "I deploy websites with best security practices, ensuring scalability and maintainability. I use version control, CI/CD pipelines, and modern hosting services to keep projects live and running smoothly.",
       image: "/images/deployment.gif",
     },
   ];
@@ -62,9 +62,9 @@ function Accordion() {
   return (
     <div className="mt-8">
       {accordionData.map((item, index) => (
-        <div key={index} className="border-b mr-4">
+        <div key={index} className="border-b border-neutral-200 mr-4">
           <button
-            className="w-full flex justify-between items-center p-4 text-3xl font-semibold cursor-pointer uppercase"
+            className={`w-full flex justify-between items-center p-4 text-3xl font-semibold cursor-pointer uppercase`}
             onClick={() => toggleAccordion(index)}
           >
             {item.title}
