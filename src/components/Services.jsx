@@ -66,7 +66,7 @@ function Accordion() {
       {accordionData.map((item, index) => (
         <div key={index} className="border-b border-neutral-200/20 mr-4">
           <button
-            className={`w-full flex justify-between items-center p-4 text-3xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
+            className={`w-full flex justify-between items-center p-4 text-2xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
               openIndex === index
                 ? "number-stroke border-b border-neutral-200/20"
                 : "text-neutral-200"

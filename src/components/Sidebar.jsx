@@ -5,7 +5,7 @@ import { FaTelegram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 
 function Sidebar() {
   return (
-    <div className="w-[285px] h-screen bg-black-russian flex flex-col transition-all duration-700 ease-in-out font-ibm text-lg">
+    <div className="w-[315px] h-screen bg-black-russian flex flex-col transition-all duration-700 ease-in-out font-ibm text-lg">
       <div className="pt-[50px] px-7 pb-7 font-header-title ">
         <Link to="/" className="text-4xl">
           Mahan&apos;s Portfolio
@@ -28,28 +28,34 @@ function Sidebar() {
           <CustomNavlink to="/contact">Contact</CustomNavlink>
         </li>
       </ul>
-      <ul className="p-8 flex flex-wrap">
-        <li className="mr-3 outline-0">
-          <Link className="contact-link w-10 h-10 bg-neutral-200 text-black-russian hover:bg-transparent hover:text-neutral-200 hover:border">
-            <AiOutlineGithub className="w-5 h-5" />
+      <div className="flex items-center justify-center py-4 w-full">
+        <div className="flex space-x-4 bg-eerie-black rounded-l-full p-2 w-full">
+          <Link className="group contact-link">
+            <AiOutlineGithub className="text-xl" />
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300 hover:pr-1">
+              Github
+            </span>
           </Link>
-        </li>
-        <li className="mr-3 outline-0">
-          <Link className="contact-link w-10 h-10 bg-neutral-200 text-black-russian hover:bg-transparent hover:text-neutral-200 hover:border">
-            <FaLinkedinIn className="w-5 h-5" />
+          <Link className="group contact-link">
+            <FaLinkedinIn className="text-xl" />
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+              LinkedIn
+            </span>
           </Link>
-        </li>
-        <li className="mr-3 outline-0">
-          <Link className="contact-link w-10 h-10 bg-neutral-200 text-black-russian hover:bg-transparent hover:text-neutral-200 hover:border">
-            <FaTelegram className="w-5 h-5" />
+          <Link className="group contact-link">
+            <FaTelegram className="text-xl" />
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+              Telegram
+            </span>
           </Link>
-        </li>
-        <li className="mr-3 outline-0">
-          <Link className="contact-link w-10 h-10 bg-neutral-200 text-black-russian hover:bg-transparent hover:text-neutral-200 hover:border">
-            <FaWhatsapp className="w-5 h-5" />
+          <Link className="group contact-link">
+            <FaWhatsapp className="text-xl" />
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+              WhatsApp
+            </span>
           </Link>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }

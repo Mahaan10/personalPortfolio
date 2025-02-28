@@ -43,7 +43,7 @@ function Home() {
               className="flex items-center justify-between gap-x-4"
               to="/contact"
             >
-              <span>Work With ME</span>
+              <span>Get in Touch</span>
               <HiArrowUpRight className="w-4 h-4" />
             </Link>
           </button>
@@ -65,12 +65,12 @@ function Home() {
           <div className="absolute top-36 left-3 w-0.5 h-16 border-r border-neutral-200 opacity-60"></div>
           <ul className=" mx-auto flex flex-col gap-y-2">
             <li className="mr-3 outline-0">
-              <Link className="contact-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
+              <Link className="contact-homePage-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
                 <FaInstagram className="w-4 h-4" />
               </Link>
             </li>
             <li className="mr-3 outline-0">
-              <Link className="contact-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
+              <Link className="contact-homePage-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
                 <FaXTwitter className="w-4 h-4" />
               </Link>
             </li>
