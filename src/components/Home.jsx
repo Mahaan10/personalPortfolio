@@ -37,7 +37,7 @@ function Home() {
           based in
           <span className="font-extrabold ml-1.5">Iran</span>
         </div>
-        <div className="font-bold mb-5 mt-5">
+        <div className="my-5">
           <button className="btn">
             <Link
               className="flex items-center justify-between gap-x-4"
