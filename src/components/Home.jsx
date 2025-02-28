@@ -23,7 +23,11 @@ function Home() {
       data-aos="fade-down"
     >
       <div className="w-[58%]">
-        <h1 className="text-7xl font-extrabold uppercase mb-4">
+        <h1
+          className="text-7xl font-extrabold uppercase mb-4"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           My name
           <br />
           is Mahan
@@ -61,8 +65,15 @@ function Home() {
       </div>
       <div className="w-[42%]">
         {/* Home Page Image!!!!!! */}
-        <div className="absolute top-0 bottom-0 right-12 flex items-center justify-center">
-          <div className="absolute top-36 left-3 w-0.5 h-16 border-r border-neutral-200 opacity-60"></div>
+        <div
+          className="absolute top-0 bottom-0 right-12 flex items-center justify-center"
+          data-aos="zoom-in-up"
+        >
+          <div
+            className="absolute top-36 left-3 w-0.5 h-16 border-r border-neutral-200 opacity-60"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          ></div>
           <ul className=" mx-auto flex flex-col gap-y-2">
             <li className="mr-3 outline-0">
               <Link className="contact-homePage-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
@@ -75,7 +86,11 @@ function Home() {
               </Link>
             </li>
           </ul>
-          <div className="absolute bottom-36 left-3 w-0.5 h-16 border-r opacity-60 border-neutral-200"></div>
+          <div
+            className="absolute bottom-36 left-3 w-0.5 h-16 border-r opacity-60 border-neutral-200"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          ></div>
         </div>
       </div>
     </div>

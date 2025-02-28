@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa6";
 import { AiOutlineGithub, AiOutlineMobile } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
+import { IoBriefcaseSharp } from "react-icons/io5";
 
 function Contact() {
   useEffect(() => {
@@ -80,7 +81,7 @@ function Contact() {
           <div className="flex flex-col gap-y-2">
             <div className="border border-neutral-200/20 pl-5 pt-5 flex">
               <div className="w-20 h-16 bg-linear-270 from-5% from-indigo-dye to-90% to-blue-munsell rounded-lg flex items-center justify-center">
-                <BsChatLeftDotsFill className="w-5 h-5" />
+                <IoBriefcaseSharp className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
                 <div className="ml-6 flex gap-y-1 flex-col">
