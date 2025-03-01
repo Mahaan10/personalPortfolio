@@ -33,43 +33,43 @@ function Contact() {
         </div>
         <div className="flex items-center justify-center gap-x-6">
           <div className="flex flex-col">
-            <div className="border border-neutral-200/20 pl-5 pt-5 flex">
-              <div className="w-20 h-16 bg-linear-90 from-50% from-indigo-dye to-green-blue to-100%  rounded-lg flex items-center justify-center">
+            <div className="border border-dark-grayish-blue/30 dark:border-neutral-200/20 pl-5 pt-5 flex">
+              <div className="w-20 h-16 bg-linear-90 from-50% from-caribbean-current dark:from-indigo-dye to-persian-green dark:to-green-blue to-100%  rounded-lg flex items-center justify-center">
                 <BsChatLeftDotsFill className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
-                <div className="ml-6 flex gap-y-1 flex-col">
+                <div className="ml-6 flex gap-y-2 flex-col">
                   <h1 className="font-bold text-lg">Chat with me</h1>
                   <p className="opacity-75 text-wrap w-[300px]">
                     You can message me on my social media accounts.
                   </p>
                 </div>
                 <div
-                  className="flex items-center justify-center py-4 w-full"
+                  className="flex items-center justify-center w-full pt-4"
                   data-aos="fade-right"
                 >
-                  <div className="flex space-x-4 bg-transparent border border-dark-grayish-blue border-r-0 rounded-l-full p-2 w-[325px]">
+                  <div className="flex space-x-4 bg-platinum dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
                     <Link className="group contact-link">
                       <FaTelegram className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300 hover:pr-1">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
                         Telegram
                       </span>
                     </Link>
                     <Link className="group contact-link">
                       <FaWhatsapp className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         WhatsApp
                       </span>
                     </Link>
                     <Link className="group contact-link">
                       <FaInstagram className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Instagram
                       </span>
                     </Link>
                     <Link className="group contact-link">
                       <FaXTwitter className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Twitter
                       </span>
                     </Link>
@@ -78,44 +78,44 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-y-2">
-            <div className="border border-neutral-200/20 pl-5 pt-5 flex">
-              <div className="w-20 h-16 bg-linear-90 from-50% from-indigo-dye to-green-blue to-100%  rounded-lg flex items-center justify-center">
+          <div className="flex flex-col">
+            <div className="border border-dark-grayish-blue/30 dark:border-neutral-200/20 pl-5 pt-5 flex">
+              <div className="w-20 h-16 bg-linear-90 from-50% from-caribbean-current to-persian-green dark:from-indigo-dye dark:to-green-blue to-100%  rounded-lg flex items-center justify-center">
                 <IoBriefcaseSharp className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
-                <div className="ml-6 flex gap-y-1 flex-col">
+                <div className="ml-6 flex gap-y-2 flex-col">
                   <h1 className="font-bold text-lg">Work with me</h1>
                   <p className="opacity-75 text-wrap w-[300px]">
                     Got Ideas? I&apos;ve got the skills. Lets team up.
                   </p>
                 </div>
                 <div
-                  className="flex items-center justify-center py-4 w-full"
+                  className="flex items-center justify-center pt-4 w-full"
                   data-aos="fade-right"
                 >
-                  <div className="flex space-x-4 bg-transparent border border-dark-grayish-blue border-r-0 rounded-l-full p-2 w-[325px]">
+                  <div className="flex space-x-4 bg-platinum dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
                     <Link className="group contact-link">
                       <AiOutlineGithub className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300 hover:pr-1">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
                         Github
                       </span>
                     </Link>
                     <Link className="group contact-link">
                       <FaLinkedinIn className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         LinkedIn
                       </span>
                     </Link>
                     <Link className="group contact-link">
                       <BiLogoGmail className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Gmail
                       </span>
                     </Link>
                     <Link className="group contact-link">
                       <AiOutlineMobile className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Mobile
                       </span>
                     </Link>

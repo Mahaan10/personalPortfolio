@@ -31,7 +31,7 @@ function Home() {
           My name
           <br />
           is Mahan
-          <span className="text-stroke">
+          <span className="dark:text-stroke-dark text-stroke">
             <br />
             Tavakoli...
           </span>
@@ -70,7 +70,7 @@ function Home() {
           data-aos="zoom-in-up"
         >
           <div
-            className="absolute top-36 left-3 w-0.5 h-16 border-r border-dark-grayish-blue opacity-60"
+            className="absolute top-36 left-3 w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60"
             data-aos="fade-right"
             data-aos-duration="1500"
           ></div>
@@ -87,7 +87,7 @@ function Home() {
             </li>
           </ul>
           <div
-            className="absolute bottom-36 left-3 w-0.5 h-16 border-r opacity-60 border-dark-grayish-blue"
+            className="absolute bottom-36 left-3 w-0.5 h-16 border-r opacity-60 border-dark-grayish-blue/60 dark:border-dark-grayish-blue"
             data-aos="fade-left"
             data-aos-duration="1500"
           ></div>

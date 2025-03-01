@@ -1,25 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap");
 
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-header-title: "Oswald";
   --font-ibm: "IBM Plex Sans";
   --color-indigo-dye: #00416a;
   --color-black-russian: #0d0b1c;
-  --color-chinese-black: #100e24;
   --color-rich-black: #030211;
   --color-blue-munsell: #0093af;
   --color-green-blue: #1164b4;
   --color-black-currant: #070d1b;
-  --color-test: #010B13;
   --color-eerie-black: #101624;
-  --color-dark-grayish-blue: #3f4551
+  --color-dark-grayish-blue: #3f4551;
+  --color-platinum: #e5e4e2;
+  --color-silver: #c0c0c0;
+  --color-ash-gray: #b2beb5;
+  --color-cadet-gray: #91a3b0;
+  --color-persian-green: #00a693;
+  --color-myrtle-green: #317873;
+  --color-caribbean-current: #006d6f;
 }
 
 @layer components {
   .contact-link {
-    @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-black-currant border border-dark-grayish-blue text-neutral-200/75 transition-all duration-300 ease-in-out hover:pr-20 hover:justify-baseline;
+    @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-silver dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-300 ease-in-out hover:pr-20 hover:justify-baseline;
     /* #070d1b => link bg */
     /* #101624 => container bg */
   }
@@ -29,7 +35,7 @@
   }
 
   .btn {
-    @apply cursor-pointer py-3.5 px-7 inline-flex items-center justify-center transition-colors ease-in-out duration-500 bg-linear-90 from-50% from-indigo-dye to-green-blue to-100% rounded-lg font-semibold hover:from-green-blue hover:to-indigo-dye hover:from-0% hover:to-50%;
+    @apply cursor-pointer py-3.5 px-7 inline-flex items-center justify-center transition-colors ease-in-out duration-500 bg-linear-90 from-50% dark:from-indigo-dye dark:to-green-blue to-persian-green from-myrtle-green to-100% rounded-lg font-semibold hover:from-persian-green dark:hover:from-green-blue dark:hover:to-indigo-dye hover:to-myrtle-green hover:from-0% hover:to-50%;
   }
 }
 
@@ -47,17 +53,33 @@
   mix-blend-mode: difference;
 }
 
-.text-stroke {
+.text-stroke-dark {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--color-green-blue);
   -webkit-text-fill-color: transparent;
 }
 
-.number-stroke {
+.text-stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-caribbean-current);
+  -webkit-text-fill-color: transparent;
+}
+
+.number-stroke-dark {
   background: linear-gradient(
     270deg,
     var(--color-indigo-dye) 0%,
     var(--color-blue-munsell) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.number-stroke {
+  background: linear-gradient(
+    270deg,
+    var(--color-caribbean-current) 0%,
+    var(--color-persian-green) 120%
   );
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -64,12 +64,15 @@ function Accordion() {
   return (
     <div className="mt-8 pr-10">
       {accordionData.map((item, index) => (
-        <div key={index} className="border-b border-neutral-200/20 mr-4">
+        <div
+          key={index}
+          className="border-b border-dark-grayish-blue/30 dark:border-neutral-200/20 mr-4"
+        >
           <button
             className={`w-full flex justify-between items-center p-4 text-2xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
               openIndex === index
-                ? "number-stroke border-b border-neutral-200/20"
-                : "text-neutral-200"
+                ? "number-stroke dark:number-stroke-dark border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
+                : ""
             }`}
             onClick={() => toggleAccordion(index)}
           >
