@@ -5,7 +5,7 @@ import { FaTelegram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 
 function Sidebar() {
   return (
-    <div className="w-[315px] h-screen bg-black-russian flex flex-col transition-all duration-700 ease-in-out font-ibm text-lg">
+    <div className="w-[325px] h-screen bg-rich-black flex flex-col transition-all duration-700 ease-in-out font-ibm text-lg">
       <div className="pt-[50px] px-7 pb-7 font-header-title ">
         <Link to="/" className="text-4xl">
           Mahan&apos;s Portfolio
@@ -29,7 +29,7 @@ function Sidebar() {
         </li>
       </ul>
       <div className="flex items-center justify-center py-4 w-full">
-        <div className="flex space-x-4 bg-eerie-black rounded-l-full p-2 w-full">
+        <div className="flex space-x-4 bg-transparent border border-r-0 border-dark-grayish-blue rounded-l-full p-2 w-full">
           <Link className="group contact-link">
             <AiOutlineGithub className="text-xl" />
             <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300 hover:pr-1">

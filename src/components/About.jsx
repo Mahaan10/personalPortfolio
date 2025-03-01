@@ -34,7 +34,7 @@ function About() {
           </Link>
         </button>
       </div>
-      <div className="w-[58%]">
+      <div className="w-[58%]" data-aos="fade-left" data-aos-duration="1500">
         <div className="max-w-[600px] mb-6">
           <p>
             I&apos;m a frontend developer based in Iran, passionate about

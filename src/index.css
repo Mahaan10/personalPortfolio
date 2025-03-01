@@ -11,12 +11,15 @@
   --color-rich-black: #030211;
   --color-blue-munsell: #0093af;
   --color-green-blue: #1164b4;
+  --color-black-currant: #070d1b;
+  --color-test: #010B13;
   --color-eerie-black: #101624;
+  --color-dark-grayish-blue: #3f4551
 }
 
 @layer components {
   .contact-link {
-    @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-rich-black  text-neutral-200/75 transition-all duration-300 ease-in-out hover:pr-20 hover:justify-baseline;
+    @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-black-currant border border-dark-grayish-blue text-neutral-200/75 transition-all duration-300 ease-in-out hover:pr-20 hover:justify-baseline;
     /* #070d1b => link bg */
     /* #101624 => container bg */
   }

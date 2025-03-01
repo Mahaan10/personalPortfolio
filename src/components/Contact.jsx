@@ -34,7 +34,7 @@ function Contact() {
         <div className="flex items-center justify-center gap-x-6">
           <div className="flex flex-col">
             <div className="border border-neutral-200/20 pl-5 pt-5 flex">
-              <div className="w-20 h-16 bg-linear-270 from-5% from-indigo-dye to-90% to-blue-munsell rounded-lg flex items-center justify-center">
+              <div className="w-20 h-16 bg-linear-90 from-50% from-indigo-dye to-green-blue to-100%  rounded-lg flex items-center justify-center">
                 <BsChatLeftDotsFill className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -48,7 +48,7 @@ function Contact() {
                   className="flex items-center justify-center py-4 w-full"
                   data-aos="fade-right"
                 >
-                  <div className="flex space-x-4 bg-[#101624] rounded-l-full p-2 w-full">
+                  <div className="flex space-x-4 bg-transparent border border-dark-grayish-blue border-r-0 rounded-l-full p-2 w-[325px]">
                     <Link className="group contact-link">
                       <FaTelegram className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300 hover:pr-1">
@@ -80,7 +80,7 @@ function Contact() {
           </div>
           <div className="flex flex-col gap-y-2">
             <div className="border border-neutral-200/20 pl-5 pt-5 flex">
-              <div className="w-20 h-16 bg-linear-270 from-5% from-indigo-dye to-90% to-blue-munsell rounded-lg flex items-center justify-center">
+              <div className="w-20 h-16 bg-linear-90 from-50% from-indigo-dye to-green-blue to-100%  rounded-lg flex items-center justify-center">
                 <IoBriefcaseSharp className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -94,7 +94,7 @@ function Contact() {
                   className="flex items-center justify-center py-4 w-full"
                   data-aos="fade-right"
                 >
-                  <div className="flex space-x-4 bg-[#101624] rounded-l-full p-2 w-full">
+                  <div className="flex space-x-4 bg-transparent border border-dark-grayish-blue border-r-0 rounded-l-full p-2 w-[325px]">
                     <Link className="group contact-link">
                       <AiOutlineGithub className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 text-neutral-200 transition-opacity text-sm duration-300 hover:pr-1">
