@@ -1,35 +1,40 @@
 import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { LuZap } from "react-icons/lu";
 
-const CircularToggle = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+export default function DarkModeToggles() {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
-    AOS.init({ duration: 500 });
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
-    <button
-      onClick={toggleTheme}
-      data-aos="flip-left"
-      className="relative w-14 h-14 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center p-2 transition-all duration-500 shadow-lg hover:scale-105"
-    >
-      <span className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 dark:from-gray-600 dark:to-gray-900 rounded-full blur-md"></span>
-      {theme === "light" ? (
-        <FaSun className="w-8 h-8 text-yellow-500 relative z-10" />
-      ) : (
-        <FaMoon className="w-8 h-8 text-white relative z-10" />
-      )}
-    </button>
+    <div className="flex space-x-6 items-start px-5 pt-2 justify-start">
+      {/* Circuit Board Toggle */}
+      <motion.button
+        onClick={() => setDarkMode(!darkMode)}
+        className="relative flex flex-col items-center cursor-pointer"
+        whileTap={{ scale: 1.1 }}
+      >
+        <motion.div
+          className={`rounded-full transition-all p-2 text-4xl  ${
+            darkMode
+              ? "text-blue-500 shadow-[0px_0px_20px_4px_rgba(88,223,255,0.7)]"
+              : "text-rich-black/75 bg-platinum border border-dark-grayish-blue shadow-[0px_0px_20px_4px] shadow-rich-black"
+          }`}
+        >
+          <LuZap />
+        </motion.div>
+      </motion.button>
+    </div>
   );
-};
-
-export default CircularToggle;
+}

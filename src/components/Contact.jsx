@@ -48,7 +48,7 @@ function Contact() {
                   className="flex items-center justify-center w-full pt-4"
                   data-aos="fade-right"
                 >
-                  <div className="flex space-x-4 bg-platinum dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
+                  <div className="flex space-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
                     <Link className="group contact-link">
                       <FaTelegram className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
@@ -94,7 +94,7 @@ function Contact() {
                   className="flex items-center justify-center pt-4 w-full"
                   data-aos="fade-right"
                 >
-                  <div className="flex space-x-4 bg-platinum dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
+                  <div className="flex space-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
                     <Link className="group contact-link">
                       <AiOutlineGithub className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
