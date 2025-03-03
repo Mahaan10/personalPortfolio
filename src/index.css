@@ -25,13 +25,13 @@
 
 @layer components {
   .contact-link {
-    @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-platinum dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-300 ease-in-out hover:pr-20 hover:justify-baseline;
+    @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-platinum dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-700 ease-in-out hover:pr-20 hover:justify-baseline;
     /* #070d1b => link bg */
     /* #101624 => container bg */
   }
 
   .contact-homePage-link {
-    @apply inline-flex items-center justify-center rounded-full transition-all duration-500 ease-in-out border-0;
+    @apply absolute -left-[23px] flex items-center justify-end px-3.5 mx-auto w-12 h-12 rounded-full bg-platinum dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-700 ease-in-out hover:w-32 hover:-translate-x-[80px];
   }
 
   .btn {

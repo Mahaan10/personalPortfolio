@@ -35,25 +35,25 @@ function Sidebar() {
         <div className="flex space-x-4 bg-transparent border border-r-0 dark:border-dark-grayish-blue border-cadet-gray rounded-l-full p-2 w-full">
           <Link className="group contact-link">
             <AiOutlineGithub className="text-xl" />
-            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700 hover:pr-1">
               Github
             </span>
           </Link>
           <Link className="group contact-link">
             <FaLinkedinIn className="text-xl" />
-            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
               LinkedIn
             </span>
           </Link>
           <Link className="group contact-link">
             <FaTelegram className="text-xl" />
-            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
               Telegram
             </span>
           </Link>
           <Link className="group contact-link">
             <FaWhatsapp className="text-xl" />
-            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
+            <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
               WhatsApp
             </span>
           </Link>

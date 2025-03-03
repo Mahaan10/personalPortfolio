@@ -19,7 +19,7 @@ function Home() {
 
   return (
     <div
-      className="relative container flex font-ibm flex-col pt-[100px] pl-4"
+      className="container flex font-ibm pt-[100px] pl-4"
       data-aos="fade-down"
     >
       <div className="w-[58%]">
@@ -63,31 +63,39 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[42%]">
-        {/* Home Page Image!!!!!! */}
+      <div className="w-[58%] flex justify-center items-center">
+        <div className="">
+          <img src="/images/bulb-on.PNG" className="rotate-90" alt="" />
+        </div>
         <div
-          className="absolute top-0 bottom-0 right-12 flex items-center justify-center"
+          className="flex flex-col items-center justify-center gap-y-12"
           data-aos="zoom-in-up"
         >
           <div
-            className="absolute top-36 left-3 w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60"
+            className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60"
             data-aos="fade-right"
             data-aos-duration="1500"
           ></div>
-          <ul className=" mx-auto flex flex-col gap-y-2">
-            <li className="mr-3 outline-0">
-              <Link className="contact-homePage-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
-                <FaInstagram className="w-4 h-4" />
+          <ul className="flex flex-col gap-y-2 relative">
+            <li>
+              <Link className="group contact-homePage-link -top-11">
+                <FaInstagram className="text-xl" />
+                <span className="absolute left-3 font-bold hidden group-hover:block transition-opacity text-sm duration-700">
+                  Instagram
+                </span>
               </Link>
             </li>
-            <li className="mr-3 outline-0">
-              <Link className="contact-homePage-link w-8 h-8 bg-transparent text-neutral-200 border hover:bg-neutral-200 hover:text-rich-black">
-                <FaXTwitter className="w-4 h-4" />
+            <li>
+              <Link className="group contact-homePage-link top-2">
+                <FaXTwitter className="text-xl" />
+                <span className="absolute left-3 font-bold hidden group-hover:block transition-opacity text-sm duration-700">
+                  Twitter
+                </span>
               </Link>
             </li>
           </ul>
           <div
-            className="absolute bottom-36 left-3 w-0.5 h-16 border-r opacity-60 border-dark-grayish-blue/60 dark:border-dark-grayish-blue"
+            className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60 mt-1"
             data-aos="fade-left"
             data-aos-duration="1500"
           ></div>

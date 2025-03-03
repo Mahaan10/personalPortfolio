@@ -19,8 +19,14 @@ function About() {
   return (
     <div className="container font-ibm flex pt-20" data-aos="fade-down">
       <div className="w-[42%] flex flex-col items-center space-y-2">
-        {/* About Page image!!!!! */}
-        <p className="uppercase text-5xl dark:number-stroke-dark number-stroke font-bold mb-2.5">
+        <div className="">
+          <img
+            src="/images/bulb-on.PNG"
+            className="rotate-90 rounded-full w-52 h-52"
+            alt=""
+          />
+        </div>
+        <p className="uppercase text-[45px] dark:number-stroke-dark number-stroke font-bold mt-7">
           Mahan Tavakoli
         </p>
         <p className="text-2xl mb-5">
