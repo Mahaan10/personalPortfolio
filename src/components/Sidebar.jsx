@@ -13,7 +13,7 @@ function Sidebar() {
         </Link>
       </div>
       <DarkModeToggle />
-      <ul className="pt-10 flex-1/2 pl-3 font-semibold uppercase">
+      <ul className="pt-16 flex-1/2 pl-3 font-semibold uppercase">
         <li>
           <CustomNavlink to="/">Home</CustomNavlink>
         </li>

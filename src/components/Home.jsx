@@ -52,7 +52,7 @@ function Home() {
             </Link>
           </button>
         </div>
-        <div className="flex items-center justify-between flex-wrap w-[75%] mt-10 font-bold">
+        <div className="flex items-center justify-between flex-wrap mt-10 font-bold">
           <div className="flex items-center justify-center gap-x-2">
             <AiOutlineMobile className="w-5 h-5" />
             <span className="text-lg">+98 911 185 6900</span>

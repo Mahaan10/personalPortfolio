@@ -51,13 +51,13 @@ function Accordion() {
       title: "Performance & API Integration",
       content:
         "I ensure your website runs fast and efficiently by optimizing performance and integrating backend APIs smoothly using Axios and React Query. From real-time data fetching to caching strategies, I make sure everything works seamlessly.",
-      image: "/images/performance-optimization.gif",
+      image: "/images/rest api 2.gif",
     },
     {
       title: "Deployment & Best Practices",
       content:
         "I deploy websites with best security practices, ensuring scalability and maintainability. I use version control, CI/CD pipelines, and modern hosting services to keep projects live and running smoothly.",
-      image: "/images/deployment.gif",
+      image: "/images/version control.gif",
     },
   ];
 

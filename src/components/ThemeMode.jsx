@@ -1,40 +1,46 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { LuZap } from "react-icons/lu";
+import { PiSunFill } from "react-icons/pi";
+import { GoMoon } from "react-icons/go";
 
 export default function DarkModeToggles() {
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
+    localStorage.getItem("theme") === "light"
   );
 
   useEffect(() => {
-    if (darkMode) {
+    if (darkMode === "dark") {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.remove("light");
     } else {
+      document.documentElement.classList.add("light");
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
 
   return (
-    <div className="flex space-x-6 items-start px-5 pt-2 justify-start">
-      {/* Circuit Board Toggle */}
-      <motion.button
-        onClick={() => setDarkMode(!darkMode)}
-        className="relative flex flex-col items-center cursor-pointer"
-        whileTap={{ scale: 1.1 }}
-      >
-        <motion.div
-          className={`rounded-full transition-all p-2 text-4xl  ${
-            darkMode
-              ? "text-blue-500 shadow-[0px_0px_20px_4px_rgba(88,223,255,0.7)]"
-              : "text-rich-black/75 bg-platinum border border-dark-grayish-blue shadow-[0px_0px_20px_4px] shadow-rich-black"
-          }`}
+    <div className="relative flex flex-col ">
+      <div className="absolute -left-10 -top-2 bg-platinum text-rich-black w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
+        <button
+          className="w-full flex items-center justify-center cursor-pointer"
+          onClick={() => setDarkMode("light")}
         >
-          <LuZap />
-        </motion.div>
-      </motion.button>
+          Light
+          <span className="px-1">
+            <PiSunFill className="w-4 h-4" />
+          </span>
+        </button>
+      </div>
+      <div className="absolute -left-10 top-5 bg-sky-950 text-platinum w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
+        <button
+          className="w-full flex items-center justify-center cursor-pointer"
+          onClick={() => setDarkMode("dark")}
+        >
+          Dark
+          <span className="px-1">
+            <GoMoon className="w-4 h-4" />
+          </span>
+        </button>
+      </div>
     </div>
   );
 }
