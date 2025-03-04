@@ -4,10 +4,11 @@ import { GoMoon } from "react-icons/go";
 
 export default function DarkModeToggles() {
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "light"
+    localStorage.getItem("theme") || "light"
   );
 
   useEffect(() => {
+    localStorage.setItem("theme", darkMode);
     if (darkMode === "dark") {
       document.documentElement.classList.add("dark");
       document.documentElement.classList.remove("light");
