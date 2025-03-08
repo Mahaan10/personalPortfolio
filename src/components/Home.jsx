@@ -18,13 +18,10 @@ function Home() {
   }, []);
 
   return (
-    <div
-      className="container flex font-ibm pt-[100px] pl-4"
-      data-aos="fade-down"
-    >
-      <div className="w-[58%]">
+    <div className="container flex font-ibm ml-4" data-aos="fade-down">
+      <div className="pt-[100px]">
         <h1
-          className="text-7xl font-extrabold uppercase mb-4"
+          className="lg:text-7xl text-4xl font-extrabold uppercase mb-4"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
@@ -33,10 +30,10 @@ function Home() {
           is Mahan
           <span className="dark:text-stroke-dark text-stroke">
             <br />
-            Tavakoli...
+            Tavakoli
           </span>
         </h1>
-        <div className="text-3xl mb-10">
+        <div className="lg:text-3xl text-xl mb-10">
           <span className="font-extrabold mr-1.5">Frontend Developer</span>
           based in
           <span className="font-extrabold ml-1.5">Iran</span>
@@ -52,7 +49,7 @@ function Home() {
             </Link>
           </button>
         </div>
-        <div className="flex items-center justify-between flex-wrap mt-10 font-bold">
+        <div className="flex items-center justify-between flex-wrap mt-10 font-bold gap-y-1.5 lg:gap-y-0">
           <div className="flex items-center justify-center gap-x-2">
             <AiOutlineMobile className="w-5 h-5" />
             <span className="text-lg">+98 911 185 6900</span>
@@ -63,10 +60,15 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[58%] flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="">
-          <img src="/images/bulb-on.PNG" className="rotate-90" alt="" />
+          <img
+            className="bg-linear-to-r from-yellow-200 to-amber-600 rounded-full w-96 h-96"
+            src="/images/Me_1-removebg-preview.png"
+            alt=""
+          />
         </div>
+        {/* // background image doesn't work */}
         <div
           className="flex flex-col items-center justify-center gap-y-12"
           data-aos="zoom-in-up"

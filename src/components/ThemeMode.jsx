@@ -19,7 +19,7 @@ export default function DarkModeToggles() {
   }, [darkMode]);
 
   return (
-    <div className="relative flex flex-col ">
+    <div className="relative flex flex-col mt-28 lg:mt-0">
       <div className="absolute -left-10 -top-2 bg-platinum text-rich-black w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
         <button
           className="w-full flex items-center justify-center cursor-pointer"

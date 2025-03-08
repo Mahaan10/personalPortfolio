@@ -18,7 +18,7 @@ function Services() {
     <div className="font-ibm pt-[100px] pl-5" data-aos="fade-down">
       <div className="flex flex-col gap-y-4 font-bold">
         <p className="italic text-lg">My Service</p>
-        <p className="uppercase text-5xl">My Specialties</p>
+        <p className="uppercase lg:text-5xl text-3xl">My Specialties</p>
       </div>
       <Accordion />
     </div>
@@ -69,7 +69,7 @@ function Accordion() {
           className="border-b border-dark-grayish-blue/30 dark:border-neutral-200/20 mr-4"
         >
           <button
-            className={`w-full flex justify-between items-center p-4 text-2xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
+            className={`w-full flex justify-between items-center p-4 lg:text-2xl text-sm sm:max-md:text-lg md:max-lg:text-xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
               openIndex === index
                 ? "number-stroke dark:number-stroke-dark border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
                 : ""
@@ -78,29 +78,29 @@ function Accordion() {
           >
             {item.title}
             <span
-              className={`text-5xl transform transition-transform duration-300 ${
+              className={`transform transition-transform duration-300 ${
                 openIndex === index ? "rotate-180" : "rotate-0"
               }`}
             >
               {openIndex === index ? (
-                <CgMathMinus className="w-10 h-10" />
+                <CgMathMinus className="lg:w-10 lg:h-10 md:max-lg:w-7 md:max-lg:h-7 w-6 h-6" />
               ) : (
-                <BsPlusLg className="w-10 h-10" />
+                <BsPlusLg className="lg:w-10 lg:h-10 md:max-lg:w-7 md:max-lg:h-7 w-6 h-6" />
               )}
             </span>
           </button>
           <div
             className={`overflow-hidden transition-all duration-700 ease-in-out ${
               openIndex === index
-                ? "max-h-[400px] scale-100 py-4"
+                ? "max-h-fit scale-100 py-4"
                 : "max-h-0 scale-95"
             }`}
           >
-            <div className="p-4 flex gap-x-10 ">
+            <div className="p-4 flex gap-x-10 flex-col md:flex-row items-center gap-y-4 md:gap-y-0">
               <img
                 src={item.image}
                 alt="Responsive Design"
-                className="w-40 bg-neutral-100 rounded-xl"
+                className="lg:w-40 w-36 bg-neutral-100 rounded-xl"
               />
               <div className="flex flex-col">
                 <h1 className="font-bold text-lg mb-6">{item.title}</h1>

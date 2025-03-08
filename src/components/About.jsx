@@ -17,8 +17,11 @@ function About() {
   }, []);
 
   return (
-    <div className="container font-ibm flex pt-20" data-aos="fade-down">
-      <div className="w-[42%] flex flex-col items-center space-y-2">
+    <div
+      className="container font-ibm flex pt-20 lg:flex-row flex-col gap-y-4 lg:gap-y-0"
+      data-aos="fade-down"
+    >
+      <div className="lg:w-[42%] flex flex-col items-center space-y-2 justify-center">
         <div className="">
           <img
             src="/images/bulb-on.PNG"
@@ -26,10 +29,10 @@ function About() {
             alt=""
           />
         </div>
-        <p className="uppercase text-[45px] dark:number-stroke-dark number-stroke font-bold mt-7">
+        <p className="uppercase lg:text-[45px] text-3xl dark:number-stroke-dark number-stroke font-bold mt-7">
           Mahan Tavakoli
         </p>
-        <p className="text-2xl mb-5">
+        <p className="lg:text-2xl text-lg mb-5">
           <span className="font-bold mr-1.5">Frontend Developer</span>
           based in <span className="font-bold">Iran</span>
         </p>
@@ -40,8 +43,12 @@ function About() {
           </Link>
         </button>
       </div>
-      <div className="w-[58%]" data-aos="fade-left" data-aos-duration="1500">
-        <div className="max-w-[600px] mb-6">
+      <div
+        className="lg:w-[58%] flex flex-col ml-6 mb-4 lg:mb-0"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
+        <div className="max-w-[600px] mb-4">
           <p>
             I&apos;m a frontend developer based in Iran, passionate about
             building responsive and dynamic web applications. I specialize in

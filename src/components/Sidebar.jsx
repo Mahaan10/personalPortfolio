@@ -3,25 +3,53 @@ import CustomNavlink from "./CustomNavlink";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaTelegram, FaLinkedinIn, FaWhatsapp, FaBars } from "react-icons/fa6";
 import DarkModeToggle from "./ThemeMode";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsOpen(true);
+      } else {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <button
-        className="md:hidden fixed top-4 right-8 z-50 p-2 bg-eerie-black dark:bg-silver text-silver dark:text-rich-black rounded"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <FaBars className="w-5 h-5" />
-      </button>
+      {/* Mobile Navbar */}
+      <div className="lg:hidden flex items-center justify-between fixed top-2 z-50 w-full bg-eerie-black">
+        <div className="font-header-title pl-4">
+          <Link to="/" className="text-4xl">
+            Mahan&apos;s Portfolio
+          </Link>
+        </div>
+        <div className="pr-8">
+          <button
+            className="p-1.5 bg-eerie-black dark:bg-silver text-silver dark:text-rich-black rounded"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <FaBars className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+
+      {/* Sidebar */}
       <div
-        className={`md:w-[325px]  h-screen bg-silver dark:bg-rich-black flex flex-col transition-all duration-700 ease-in-out font-ibm text-lg ${
-          isOpen ? " translate-x-0" : "-translate-x-full"
+        className={`w-[325px] flex fixed top-0 bottom-0 lg:left-0 z-40 h-screen bg-silver dark:bg-rich-black flex-col transition-all duration-700 ease-in-out font-ibm text-lg ${
+          isOpen ? "translate-x-0 left-0" : "-translate-x-full -left-96"
         }`}
       >
-        <div className="pt-10 px-7 pb-7 font-header-title ">
+        <div className="pt-10 px-7 pb-7 font-header-title lg:flex hidden">
           <Link to="/" className="text-4xl">
             Mahan&apos;s Portfolio
           </Link>
