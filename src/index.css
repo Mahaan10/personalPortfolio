@@ -18,8 +18,8 @@
   --color-silver: #c0c0c0;
   --color-ash-gray: #b2beb5;
   --color-cadet-gray: #91a3b0;
-  --color-persian-green: #00a693;
-  --color-myrtle-green: #317873;
+  --color-persian-green: #679d6f;
+  --color-myrtle-green: #243727;
   --color-caribbean-current: #006d6f;
 }
 
@@ -35,7 +35,7 @@
   }
 
   .btn {
-    @apply cursor-pointer py-3.5 px-7 inline-flex items-center justify-center transition-colors ease-in-out duration-500 bg-linear-90 from-50% dark:from-indigo-dye dark:to-green-blue to-persian-green from-myrtle-green to-100% rounded-lg font-semibold hover:from-persian-green dark:hover:from-green-blue dark:hover:to-indigo-dye hover:to-myrtle-green hover:from-0% hover:to-50%;
+    @apply cursor-pointer py-3.5 px-7 inline-flex items-center justify-center transition-colors ease-in-out duration-500 -bg-linear-300 from-20% dark:from-indigo-dye dark:to-green-blue to-persian-green from-myrtle-green to-100% rounded-lg font-semibold hover:from-persian-green dark:hover:from-green-blue dark:hover:to-indigo-dye hover:to-myrtle-green hover:from-0% hover:to-50% text-neutral-200;
   }
 }
 
@@ -77,9 +77,9 @@
 
 .number-stroke {
   background: linear-gradient(
-    270deg,
-    var(--color-caribbean-current) 0%,
-    var(--color-persian-green) 120%
+    -300deg,
+    var(--color-caribbean-current) 20%,
+    var(--color-persian-green) 100%
   );
   -webkit-text-fill-color: transparent;
   background-clip: text;

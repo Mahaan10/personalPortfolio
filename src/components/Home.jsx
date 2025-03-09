@@ -62,11 +62,7 @@ function Home() {
       </div>
       <div className="flex justify-center items-center">
         <div className="">
-          <img
-            className="bg-linear-to-r from-yellow-200 to-amber-600 rounded-full w-96 h-96"
-            src="/images/Me_1-removebg-preview.png"
-            alt=""
-          />
+          <img className="" src="/images/Me 1.jpg" alt="" />
         </div>
         {/* // background image doesn't work */}
         <div

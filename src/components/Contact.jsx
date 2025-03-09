@@ -34,7 +34,7 @@ function Contact() {
         <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 items-center justify-center gap-x-6">
           <div className="flex flex-col">
             <div className="border border-dark-grayish-blue/30 dark:border-neutral-200/20 pl-5 pt-5 flex">
-              <div className="w-20 h-16 bg-linear-90 from-50% from-caribbean-current dark:from-indigo-dye to-persian-green dark:to-green-blue to-100%  rounded-lg flex items-center justify-center">
+              <div className="w-20 h-16 -bg-linear-300 from-20% from-myrtle-green dark:from-indigo-dye to-persian-green dark:to-green-blue to-100%  rounded-lg flex items-center justify-center text-neutral-200">
                 <BsChatLeftDotsFill className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -80,7 +80,7 @@ function Contact() {
           </div>
           <div className="flex flex-col">
             <div className="border border-dark-grayish-blue/30 dark:border-neutral-200/20 pl-5 pt-5 flex">
-              <div className="w-20 h-16 bg-linear-90 from-50% from-caribbean-current to-persian-green dark:from-indigo-dye dark:to-green-blue to-100%  rounded-lg flex items-center justify-center">
+              <div className="w-20 h-16 -bg-linear-300 from-20% from-myrtle-green dark:from-indigo-dye to-persian-green dark:to-green-blue to-100%  rounded-lg flex items-center justify-center text-neutral-200">
                 <IoBriefcaseSharp className="w-5 h-5" />
               </div>
               <div className="flex flex-col gap-y-2">
