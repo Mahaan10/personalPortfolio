@@ -27,7 +27,7 @@ function Sidebar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="lg:hidden flex items-center justify-between fixed top-2 z-50 w-full bg-eerie-black">
+      <div className="lg:hidden flex items-center justify-between fixed top-2 z-50 w-full bg-inherit">
         <div className="font-header-title pl-4">
           <Link to="/" className="text-4xl">
             Mahan&apos;s Portfolio

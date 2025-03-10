@@ -18,8 +18,8 @@ function Home() {
   }, []);
 
   return (
-    <div className="container flex font-ibm ml-4" data-aos="fade-down">
-      <div className="pt-[100px]">
+    <div className="flex justify-between font-ibm ml-4" data-aos="fade-down">
+      <div className="flex flex-col pt-[60px] z-50">
         <h1
           className="lg:text-7xl text-4xl font-extrabold uppercase mb-4"
           data-aos="fade-left"
@@ -61,22 +61,22 @@ function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="">
-          <img className="" src="/images/Me 1.jpg" alt="" />
-        </div>
-        {/* // background image doesn't work */}
+        <div className="-bg-linear-90 from-10% to-70% from-myrtle-green to-persian-green dark:from-eerie-black dark:to-indigo-dye w-96 h-96 rounded-full absolute right-0 top-0 bottom-0 mr-[155px] mt-4 transition-colors duration-700"></div>
+
         <div
-          className="flex flex-col items-center justify-center gap-y-12"
-          data-aos="zoom-in-up"
-        >
+          className="bg-[url('/images/20250310_032629edit.png')] absolute right-0 top-0 bottom-0 w-[650px] h-screen bg-contain object-cover bg-no-repeat bg-center rounded-full"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        ></div>
+        <div className="space-y-12" data-aos="zoom-in-up">
           <div
-            className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60"
+            className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60 absolute right-[60px] -top-16 bottom-0"
             data-aos="fade-right"
             data-aos-duration="1500"
           ></div>
           <ul className="flex flex-col gap-y-2 relative">
             <li>
-              <Link className="group contact-homePage-link -top-11">
+              <Link className="group contact-homePage-link top-1/2">
                 <FaInstagram className="text-xl" />
                 <span className="absolute left-3 font-bold hidden group-hover:block transition-opacity text-sm duration-700">
                   Instagram
@@ -84,7 +84,7 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link className="group contact-homePage-link top-2">
+              <Link className="group contact-homePage-link top-14">
                 <FaXTwitter className="text-xl" />
                 <span className="absolute left-3 font-bold hidden group-hover:block transition-opacity text-sm duration-700">
                   Twitter
@@ -93,7 +93,7 @@ function Home() {
             </li>
           </ul>
           <div
-            className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60 mt-1"
+            className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60 absolute right-[60px] top-[108px] bottom-0"
             data-aos="fade-left"
             data-aos-duration="1500"
           ></div>

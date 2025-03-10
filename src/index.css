@@ -31,7 +31,7 @@
   }
 
   .contact-homePage-link {
-    @apply absolute -left-[23px] flex items-center justify-end px-3.5 mx-auto w-12 h-12 rounded-full bg-platinum dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-700 ease-in-out hover:w-32 hover:-translate-x-[80px];
+    @apply absolute -left-[85px] flex items-center justify-end px-3.5 mx-auto w-12 h-12 rounded-full bg-platinum dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-700 ease-in-out hover:w-32 hover:-translate-x-[80px];
   }
 
   .btn {

@@ -18,7 +18,7 @@ function About() {
 
   return (
     <div
-      className="container font-ibm flex pt-20 lg:flex-row flex-col gap-y-4 lg:gap-y-0"
+      className="font-ibm flex pt-[60px] lg:flex-row flex-col gap-y-4 lg:gap-y-0"
       data-aos="fade-down"
     >
       <div className="lg:w-[42%] flex flex-col items-center space-y-2 justify-center">
