@@ -21,7 +21,7 @@ function Home() {
     <div className="flex justify-between font-ibm ml-4" data-aos="fade-down">
       <div className="flex flex-col pt-[60px] z-50">
         <h1
-          className="lg:text-7xl text-4xl font-extrabold uppercase mb-4"
+          className="lg:text-7xl sm:text-4xl text-3xl font-extrabold uppercase mb-4"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
@@ -33,12 +33,12 @@ function Home() {
             Tavakoli
           </span>
         </h1>
-        <div className="lg:text-3xl text-xl mb-10">
+        <div className="lg:text-3xl sm:text-2xl text-base mb-5">
           <span className="font-extrabold mr-1.5">Frontend Developer</span>
           based in
           <span className="font-extrabold ml-1.5">Iran</span>
         </div>
-        <div className="my-5">
+        <div className="mt-5">
           <button className="btn">
             <Link
               className="flex items-center justify-between gap-x-4"
@@ -49,26 +49,34 @@ function Home() {
             </Link>
           </button>
         </div>
-        <div className="flex items-center justify-between flex-wrap mt-10 font-bold gap-y-1.5 lg:gap-y-0">
-          <div className="flex items-center justify-center gap-x-2">
+        <div className="flex justify-between flex-wrap flex-col-reverse lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0">
+          <div className="flex items-center gap-x-2">
             <AiOutlineMobile className="w-5 h-5" />
             <span className="text-lg">+98 911 185 6900</span>
           </div>
-          <div className="flex items-center justify-center gap-x-2">
+          <div className="flex items-center  gap-x-2">
             <FaRegEnvelope className="w-4 h-4 mt-1" />
             <span className="text-lg">reza.mahan10@gmail.com</span>
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="-bg-linear-90 from-10% to-70% from-myrtle-green to-persian-green dark:from-eerie-black dark:to-indigo-dye w-96 h-96 rounded-full absolute right-0 top-0 bottom-0 mr-[155px] mt-4 transition-colors duration-700"></div>
+        <div className="-bg-linear-90 from-10% to-70% from-myrtle-green to-persian-green dark:from-eerie-black dark:to-indigo-dye w-80 h-80 sm:w-96 sm:h-96 rounded-full absolute right-0 top-0 bottom-0  sm:mr-[155px] lg:mt-4 mt-8 transition-colors duration-700"></div>
 
+        {/* <div
+          className="bg-[url('/images/20250310_032629edit.png')] absolute right-0 top-0 bottom-0  sm:w-[650px] h-screen w-96 bg-cover object-contain bg-no-repeat sm:bg-center rounded-full"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        ></div> */}
         <div
-          className="bg-[url('/images/20250310_032629edit.png')] absolute right-0 top-0 bottom-0 w-[650px] h-screen bg-contain object-cover bg-no-repeat bg-center rounded-full"
+          className="bg-[url('/images/20250310_032629edit.png')] absolute sm:right-0 -right-64 top-0 bottom-0 w-[650px] h-screen bg-contain object-contain bg-no-repeat bg-center rounded-full"
           data-aos="fade-right"
           data-aos-duration="1500"
         ></div>
-        <div className="space-y-12" data-aos="zoom-in-up">
+        <div
+          className="space-y-12 sm:flex sm:flex-col hidden"
+          data-aos="zoom-in-up"
+        >
           <div
             className="w-0.5 h-16 border-r border-dark-grayish-blue/60 dark:border-dark-grayish-blue opacity-60 absolute right-[60px] -top-16 bottom-0"
             data-aos="fade-right"

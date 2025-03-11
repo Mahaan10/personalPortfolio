@@ -29,7 +29,7 @@ function Sidebar() {
       {/* Mobile Navbar */}
       <div className="lg:hidden flex items-center justify-between fixed top-2 z-50 w-full bg-inherit">
         <div className="font-header-title pl-4">
-          <Link to="/" className="text-4xl">
+          <Link to="/" className="sm:text-4xl text-xl">
             Mahan&apos;s Portfolio
           </Link>
         </div>
@@ -45,7 +45,7 @@ function Sidebar() {
 
       {/* Sidebar */}
       <div
-        className={`w-[325px] flex fixed top-0 bottom-0 lg:left-0 z-40 h-screen bg-silver dark:bg-rich-black flex-col transition-all duration-700 ease-in-out font-ibm text-lg ${
+        className={`md:w-[325px] w-[284px] flex fixed top-0 bottom-0 lg:left-0 z-40 h-screen bg-silver dark:bg-rich-black flex-col transition-all duration-700 ease-in-out font-ibm text-lg ${
           isOpen ? "translate-x-0 left-0" : "-translate-x-full -left-96"
         }`}
       >
