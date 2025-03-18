@@ -40,23 +40,24 @@ function Home() {
         </div>
         <div className="mt-5">
           <button className="btn">
+            {/* Link need to be solved! */}
             <Link
               className="flex items-center justify-between gap-x-4"
-              to="/contact"
+              to="#contact"
             >
               <span>Get in Touch</span>
               <HiArrowUpRight className="w-4 h-4" />
             </Link>
           </button>
         </div>
-        <div className="flex justify-between flex-wrap flex-col-reverse lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0">
+        <div className="flex justify-between flex-wrap flex-col-reverse gap-x-8 lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0">
           <div className="flex items-center gap-x-2">
             <AiOutlineMobile className="w-5 h-5" />
-            <span className="text-lg">+98 911 185 6900</span>
+            <span className="text-lg">+98 998 153 0861</span>
           </div>
           <div className="flex items-center  gap-x-2">
             <FaRegEnvelope className="w-4 h-4 mt-1" />
-            <span className="text-lg">reza.mahan10@gmail.com</span>
+            <span className="text-lg">mahantavakolicareer@gmail.com</span>
           </div>
         </div>
       </div>
@@ -84,20 +85,30 @@ function Home() {
           ></div>
           <ul className="flex flex-col gap-y-2 relative">
             <li>
-              <Link className="group contact-homePage-link top-1/2">
+              <a
+                href="https://www.instagram.com/mahan__tavakkoli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group contact-homePage-link top-1/2"
+              >
                 <FaInstagram className="text-xl" />
                 <span className="absolute left-3 font-bold hidden group-hover:block transition-opacity text-sm duration-700">
                   Instagram
                 </span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className="group contact-homePage-link top-14">
+              <a
+                href="https://twitter.com/@ThisisRez10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group contact-homePage-link top-14"
+              >
                 <FaXTwitter className="text-xl" />
                 <span className="absolute left-3 font-bold hidden group-hover:block transition-opacity text-sm duration-700">
                   Twitter
                 </span>
-              </Link>
+              </a>
             </li>
           </ul>
           <div

@@ -49,30 +49,50 @@ function Contact() {
                   data-aos="fade-right"
                 >
                   <div className="flex space-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
-                    <Link className="group contact-link">
+                    <a
+                      href="https://t.me/MaahanTavakoli"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group contact-link"
+                    >
                       <FaTelegram className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
                         Telegram
                       </span>
-                    </Link>
-                    <Link className="group contact-link">
+                    </a>
+                    <a
+                      href="https://wa.me/+989981530861"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group contact-link"
+                    >
                       <FaWhatsapp className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
                         WhatsApp
                       </span>
-                    </Link>
-                    <Link className="group contact-link">
+                    </a>
+                    <a
+                      href="https://www.instagram.com/mahan__tavakkoli"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group contact-link"
+                    >
                       <FaInstagram className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Instagram
                       </span>
-                    </Link>
-                    <Link className="group contact-link">
+                    </a>
+                    <a
+                      href="https://twitter.com/@ThisisRez10"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group contact-link"
+                    >
                       <FaXTwitter className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Twitter
                       </span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -95,30 +115,43 @@ function Contact() {
                   data-aos="fade-right"
                 >
                   <div className="flex space-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[330px]">
-                    <Link className="group contact-link">
+                    <a
+                      className="group contact-link"
+                      href="https://github.com/Mahaan10"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <AiOutlineGithub className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300 hover:pr-1">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700 hover:pr-1">
                         Github
                       </span>
-                    </Link>
-                    <Link className="group contact-link">
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/mahan-tavakoli"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group contact-link"
+                    >
                       <FaLinkedinIn className="text-xl" />
-                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
+                      <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
                         LinkedIn
                       </span>
-                    </Link>
-                    <Link className="group contact-link">
+                    </a>
+                    <a
+                      href="mailto:mahantavakolicareer@gmail.com"
+                      className="group contact-link"
+                    >
                       <BiLogoGmail className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Gmail
                       </span>
-                    </Link>
-                    <Link className="group contact-link">
+                    </a>
+                    <a href="tel:+989981530861" className="group contact-link">
                       <AiOutlineMobile className="text-xl" />
                       <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-300">
                         Mobile
                       </span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

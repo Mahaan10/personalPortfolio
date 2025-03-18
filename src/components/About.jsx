@@ -57,15 +57,15 @@ function About() {
             experiences with every project.
           </p>
         </div>
-        <div className="flex font-bold items-center gap-x-6 mb-8">
+        <div className="flex font-bold lg:items-center gap-x-6 mb-8 flex-col lg:flex-row space-y-1.5 lg:space-y-0">
           <div className="flex flex-col space-y-1.5">
             <div className="flex items-center gap-x-2">
               <AiOutlineMobile className="w-5 h-5" />
-              <span className="text-lg">+98 911 185 6900</span>
+              <span className="text-lg">+98 998 153 0861</span>
             </div>
             <div className="flex items-center gap-x-2">
               <FaRegEnvelope className="w-5 h-4 mt-1" />
-              <span className="text-lg">reza.mahan10@gmail.com</span>
+              <span className="text-lg">mahantavakolicareer@gmail.com</span>
             </div>
           </div>
           <div className="flex flex-col space-y-1.5">

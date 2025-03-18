@@ -1,30 +1,29 @@
-import { NavLink, useLocation } from "react-router-dom";
+function CustomNavlink({ children, to, activeSection }) {
+  const id = to.replace("#", "");
+  const isActive = activeSection === id;
 
-function CustomNavlink({ children, to }) {
-  const location = useLocation();
-
-  const navlinkClassName =
-    "pl-5 pr-3 py-2 relative flex items-center justify-between transition-all duration-700 ease-in-out";
-
-  // Check if the current pathname matches the NavLink's destination
-  const isActive = location.pathname === to;
+  const handleClick = (e) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", to);
+    }
+  };
 
   return (
-    <NavLink
-      to={to}
-      className={`${navlinkClassName} ${
+    <a
+      href={to}
+      onClick={handleClick}
+      className={`pl-5 pr-3 py-2 relative flex items-center justify-between transition-all duration-700 ease-in-out ${
         isActive ? "opacity-100" : "opacity-50 hover:opacity-85"
       }`}
     >
-      {/* Text part of the NavLink */}
       <span>{children}</span>
-
-      {/* Conditionally render the SVG for active links */}
       <svg
         className={`${
-          isActive ? " opacity-100" : "opacity-0"
+          isActive ? "opacity-100" : "opacity-0"
         } transition-all duration-700 stroke-current`}
-        // Show the SVG only if the link is active
         width="35"
         height="35"
         viewBox="0 0 46 42"
@@ -44,7 +43,7 @@ function CustomNavlink({ children, to }) {
           strokeLinecap="round"
         />
       </svg>
-    </NavLink>
+    </a>
   );
 }
 

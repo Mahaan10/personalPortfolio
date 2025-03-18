@@ -5,7 +5,7 @@ import { FaTelegram, FaLinkedinIn, FaWhatsapp, FaBars } from "react-icons/fa6";
 import DarkModeToggle from "./ThemeMode";
 import { useState, useEffect } from "react";
 
-function Sidebar() {
+function Sidebar({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,6 @@ function Sidebar() {
     };
 
     window.addEventListener("resize", handleResize);
-
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
@@ -29,7 +28,7 @@ function Sidebar() {
       {/* Mobile Navbar */}
       <div className="lg:hidden flex items-center justify-between fixed top-2 z-50 w-full bg-inherit">
         <div className="font-header-title pl-4">
-          <Link to="/" className="sm:text-4xl text-xl">
+          <Link to={{ hash: "#home" }} className="sm:text-4xl text-xl">
             Mahan&apos;s Portfolio
           </Link>
         </div>
@@ -49,56 +48,84 @@ function Sidebar() {
           isOpen ? "translate-x-0 left-0" : "-translate-x-full -left-96"
         }`}
       >
-        <div className="pt-10 px-7 pb-7 font-header-title lg:flex hidden">
-          <Link to="/" className="text-4xl">
-            Mahan&apos;s Portfolio
-          </Link>
+        <div className="pt-10 !text-3xl px-7 pb-7 font-header-title lg:flex hidden">
+          <CustomNavlink to="#home">Mahan&apos;s Portfolio</CustomNavlink>
         </div>
         <DarkModeToggle />
         <ul className="pt-16 flex-1/2 pl-3 font-semibold uppercase">
           <li>
-            <CustomNavlink to="/">Home</CustomNavlink>
+            <CustomNavlink to="#home" activeSection={activeSection}>
+              Home
+            </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="/about">About</CustomNavlink>
+            <CustomNavlink to="#about" activeSection={activeSection}>
+              About
+            </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="/services">Services</CustomNavlink>
+            <CustomNavlink to="#services" activeSection={activeSection}>
+              Services
+            </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="/portfolio">Portfolio</CustomNavlink>
+            <CustomNavlink to="#portfolio" activeSection={activeSection}>
+              Portfolio
+            </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="/contact">Contact</CustomNavlink>
+            <CustomNavlink to="#contact" activeSection={activeSection}>
+              Contact
+            </CustomNavlink>
           </li>
         </ul>
         <div className="ml-5"></div>
         <div className="flex items-center justify-center py-4 w-full">
           <div className="flex space-x-4 bg-transparent border border-r-0 dark:border-dark-grayish-blue border-cadet-gray rounded-l-full p-2 w-full">
-            <Link className="group contact-link">
+            <a
+              className="group contact-link"
+              href="https://github.com/Mahaan10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiOutlineGithub className="text-xl" />
               <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700 hover:pr-1">
                 Github
               </span>
-            </Link>
-            <Link className="group contact-link">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mahan-tavakoli"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group contact-link"
+            >
               <FaLinkedinIn className="text-xl" />
               <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
                 LinkedIn
               </span>
-            </Link>
-            <Link className="group contact-link">
+            </a>
+            <a
+              href="https://t.me/MaahanTavakoli"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group contact-link"
+            >
               <FaTelegram className="text-xl" />
               <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
                 Telegram
               </span>
-            </Link>
-            <Link className="group contact-link">
+            </a>
+            <a
+              href="https://wa.me/+989981530861"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group contact-link"
+            >
               <FaWhatsapp className="text-xl" />
               <span className="absolute left-10 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm duration-700">
                 WhatsApp
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
