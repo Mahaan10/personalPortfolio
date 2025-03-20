@@ -2,7 +2,6 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import { BsChatLeftDotsFill } from "react-icons/bs";
-import { Link } from "react-router";
 import {
   FaInstagram,
   FaLinkedinIn,
