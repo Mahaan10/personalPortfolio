@@ -1,6 +1,7 @@
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import { Link } from "react-router";
 
 const projects = [
   {
@@ -32,23 +33,36 @@ function Portfolio() {
       </div>
       <div className="flex justify-between">
         {projects.map((project) => (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             key={project.id}
-            className="cursor-pointer dark:bg-rich-black px-4 py-2 rounded-lg transition"
+            className="dark:bg-rich-black px-4 py-2 rounded-lg"
           >
-            <div className="flex justify-center gap-x-2">
-              <div className="max-w-60">
-                <img src={project.img} alt="" className="w-full rounded-lg" />
+            <div className="flex flex-col py-0.5">
+              <div className="flex gap-x-2 cursor-pointer">
+                <div className="max-w-52">
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full rounded-lg"
+                  />
+                </div>
+                <div className="w-48">
+                  <h1 className="mb-4 text-sm">{project.features}</h1>
+                  <h1 className="text-lg font-bold">{project.title}</h1>
+                </div>
               </div>
-              <div className="w-64 mx-auto flex items-center justify-evenly flex-col">
-                <h1 className="">{project.features}</h1>
-                <h1 className="text-2xl font-bold">{project.title}</h1>
-              </div>
+              <Link
+                to={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <button className="mt-2 w-full bg-eerie-black cursor-pointer rounded-lg py-1.5">
+                  Live
+                </button>
+              </Link>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </div>
