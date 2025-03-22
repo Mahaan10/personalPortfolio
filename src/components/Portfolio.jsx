@@ -13,6 +13,15 @@ const projects = [
     demo: "https://inventory-rouge-rho.vercel.app",
     repo: "https://github.com/Mahaan10/Inventory",
   },
+  {
+    id: 2,
+    title: "Note App",
+    features: "React JS + TailwindCSS",
+    description: "",
+    img: "images/NoteApp.png",
+    demo: "https://note-application-psi.vercel.app/",
+    repo: "https://github.com/Mahaan10/noteApp",
+  },
 ];
 
 function Portfolio() {
@@ -31,7 +40,7 @@ function Portfolio() {
         <p className="italic text-lg">My Work</p>
         <p className="uppercase text-5xl mb-10">Recent Project</p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex md:gap-x-4 gap-y-4 flex-col md:flex-row">
         {projects.map((project) => (
           <div
             key={project.id}
