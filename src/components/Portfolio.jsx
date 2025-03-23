@@ -19,8 +19,17 @@ const projects = [
     features: "React JS + TailwindCSS",
     description: "",
     img: "images/NoteApp.png",
-    demo: "https://note-application-psi.vercel.app/",
+    demo: "https://note-application-psi.vercel.app",
     repo: "https://github.com/Mahaan10/noteApp",
+  },
+  {
+    id: 3,
+    title: "Burger House Coffee & Restaurant",
+    features: "React JS + Bootstrap",
+    description: "",
+    img: "images/burger house.png",
+    demo: "https://burger-house-restaurant.vercel.app",
+    repo: "https://github.com/Mahaan10/burgerHouse",
   },
 ];
 

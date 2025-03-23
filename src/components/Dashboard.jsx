@@ -41,19 +41,19 @@ function Dashboard() {
         style={{ scrollBehavior: "smooth" }}
       >
         <div className="container max-w-screen mx-auto flex flex-col lg:pl-[325px] -bg-linear-300 from-20% from-platinum to-ash-gray dark:from-eerie-black to-100% dark:to-rich-black transition-colors duration-700">
-          <section id="home" className="h-screen">
+          <section id="home" className="min-h-screen">
             <Home />
           </section>
-          <section id="about" className="h-screen">
+          <section id="about" className="min-h-screen">
             <About />
           </section>
-          <section id="services" className="h-screen">
+          <section id="services" className="min-h-screen">
             <Services />
           </section>
-          <section id="portfolio" className="h-screen">
+          <section id="portfolio" className="min-h-screen">
             <Portfolio />
           </section>
-          <section id="contact" className="h-screen">
+          <section id="contact" className="min-h-screen">
             <Contact />
           </section>
         </div>
