@@ -26,7 +26,7 @@ function Sidebar({ activeSection }) {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="lg:hidden flex items-center justify-between fixed top-2 z-50 w-full bg-inherit">
+      <div className="lg:hidden flex items-center justify-between fixed top-2 z-50  w-full bg-platinum dark:bg-rich-black py-1.5">
         <div className="font-header-title pl-4">
           <Link to={{ hash: "#home" }} className="sm:text-4xl text-xl">
             Mahan&apos;s Portfolio
@@ -34,7 +34,7 @@ function Sidebar({ activeSection }) {
         </div>
         <div className="pr-8">
           <button
-            className="p-1.5 bg-eerie-black dark:bg-silver text-silver dark:text-rich-black rounded"
+            className="p-1 bg-eerie-black dark:bg-silver text-silver dark:text-rich-black rounded"
             onClick={() => setIsOpen(!isOpen)}
           >
             <FaBars className="w-5 h-5" />
