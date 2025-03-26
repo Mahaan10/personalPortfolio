@@ -19,8 +19,8 @@ export default function DarkModeToggles() {
   }, [darkMode]);
 
   return (
-    <div className="relative flex flex-col mt-28 lg:mt-0">
-      <div className="absolute -left-10 -top-2 bg-platinum text-rich-black w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
+    <div className="relative flex flex-col">
+      <div className="absolute -left-10 top-7 bg-platinum text-rich-black w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
         <button
           className="w-full flex items-center justify-center cursor-pointer"
           onClick={() => setDarkMode("light")}
@@ -31,7 +31,7 @@ export default function DarkModeToggles() {
           </span>
         </button>
       </div>
-      <div className="absolute -left-10 top-5 bg-sky-950 text-platinum w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
+      <div className="absolute -left-10 top-14 bg-sky-950 text-platinum w-16 hover:w-28 transition-all duration-700 hover:left-0 rounded-r-md">
         <button
           className="w-full flex items-center justify-center cursor-pointer"
           onClick={() => setDarkMode("dark")}

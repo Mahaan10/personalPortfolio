@@ -15,7 +15,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="font-ibm pt-[100px] pl-5" data-aos="fade-down">
+    <div className="pt-[100px] pl-5" data-aos="fade-down">
       <div className="flex flex-col gap-y-4 font-bold">
         <p className="italic text-lg">My Service</p>
         <p className="uppercase lg:text-5xl text-3xl">My Specialties</p>

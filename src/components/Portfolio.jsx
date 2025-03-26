@@ -53,7 +53,7 @@ function Portfolio() {
   }, []);
 
   return (
-    <div className="font-ibm pt-[50px] px-5" data-aos="fade-down">
+    <div className="pt-[50px] px-5" data-aos="fade-down">
       <div className="flex flex-col gap-y-4 font-bold">
         <p className="italic text-lg">My Work</p>
         <p className="uppercase text-3xl sm:text-5xl mb-10">Recent Project</p>

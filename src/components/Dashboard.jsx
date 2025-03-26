@@ -40,7 +40,7 @@ function Dashboard() {
         className="flex-1 overflow-y-auto"
         style={{ scrollBehavior: "smooth" }}
       >
-        <div className="container max-w-screen mx-auto flex flex-col lg:pl-[325px] -bg-linear-300 from-20% from-platinum to-ash-gray dark:from-eerie-black to-100% dark:to-rich-black transition-colors duration-700">
+        <div className="container max-w-screen mx-auto flex flex-col lg:pl-[325px] -bg-linear-300 from-20% from-platinum to-ash-gray dark:from-eerie-black to-100% dark:to-rich-black transition-colors duration-700 font-nunito">
           <section id="home" className="min-h-screen">
             <Home />
           </section>

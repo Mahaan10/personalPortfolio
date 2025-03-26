@@ -1,14 +1,14 @@
-import { Link } from "react-router";
 import CustomNavlink from "./CustomNavlink";
 import { AiOutlineGithub } from "react-icons/ai";
-import { FaTelegram, FaLinkedinIn, FaWhatsapp, FaBars } from "react-icons/fa6";
+import { FaTelegram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import { TbMenuDeep } from "react-icons/tb";
 import DarkModeToggle from "./ThemeMode";
 import { useState, useEffect } from "react";
 
 function Sidebar({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
+    useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
         setIsOpen(true);
@@ -26,33 +26,28 @@ function Sidebar({ activeSection }) {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="lg:hidden flex items-center justify-between fixed top-2 z-50  w-full bg-platinum dark:bg-rich-black py-1.5">
-        <div className="font-header-title pl-4">
-          <Link to={{ hash: "#home" }} className="sm:text-4xl text-xl">
-            Mahan&apos;s Portfolio
-          </Link>
-        </div>
-        <div className="pr-8">
+      <div className="lg:hidden flex items-center justify-end fixed top-2 z-50 w-full">
+        <div className="mr-5 bg-gray-300 rounded-xl p-2">
           <button
-            className="p-1 bg-eerie-black dark:bg-silver text-silver dark:text-rich-black rounded"
+            className="p-1 bg-gray-950 text-platinum rounded cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <FaBars className="w-5 h-5" />
+            <TbMenuDeep className="w-5 h-5" />
           </button>
         </div>
       </div>
 
       {/* Sidebar */}
       <div
-        className={`md:w-[325px] w-[284px] flex fixed top-0 bottom-0 lg:left-0 z-40 h-screen bg-silver dark:bg-rich-black flex-col transition-all duration-700 ease-in-out font-ibm text-lg ${
+        className={`md:w-[325px] w-[284px] flex fixed top-0 bottom-0 lg:left-0 z-40 h-screen bg-silver dark:bg-rich-black flex-col transition-all duration-700 ease-in-out text-lg font-winky ${
           isOpen ? "translate-x-0 left-0" : "-translate-x-full -left-96"
         }`}
       >
-        <div className="pt-10 !text-3xl px-7 pb-7 font-header-title lg:flex hidden">
+        <div className="pt-10 text-2xl lg:text-3xl items-center justify-center w-full flex">
           <CustomNavlink to="#home">Mahan&apos;s Portfolio</CustomNavlink>
         </div>
         <DarkModeToggle />
-        <ul className="pt-16 flex-1/2 pl-3 font-semibold uppercase">
+        <ul className="flex-1/2 pl-3 font-semibold uppercase mt-28">
           <li>
             <CustomNavlink to="#home" activeSection={activeSection}>
               Home

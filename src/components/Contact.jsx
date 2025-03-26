@@ -24,13 +24,13 @@ function Contact() {
   });
 
   return (
-    <div className="font-ibm pt-[50px] px-5" data-aos="fade-down">
+    <div className="pt-[50px] px-5" data-aos="fade-down">
       <div className="flex flex-col gap-y-4">
         <div className="flex-col flex gap-y-4 font-bold mb-6">
           <p className="italic text-lg">Contact</p>
           <p className="uppercase text-5xl">Get in Touch</p>
         </div>
-        <div className="flex flex-col gap-y-44 items-center justify-between">
+        <div className="flex flex-col gap-y-60 items-center justify-between">
           <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-x-6 lg:flex-row">
             <div className="border border-dark-grayish-blue/30 dark:border-neutral-200/20 pt-5 flex flex-col w-full min-[450px]:w-auto">
               <div className="flex gap-x-2 ml-2">

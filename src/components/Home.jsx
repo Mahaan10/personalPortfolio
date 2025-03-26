@@ -18,17 +18,20 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex justify-between font-ibm ml-4" data-aos="fade-down">
+    <div className="flex justify-between ml-4" data-aos="fade-down">
       <div className="flex flex-col pt-[60px] z-50">
         <h1
-          className="lg:text-7xl sm:text-4xl text-2xl font-extrabold uppercase mb-4"
-          //data-aos="fade-left"
-          //data-aos-duration="1500"
+          className="lg:text-7xl sm:text-4xl text-2xl font-extrabold mb-4"
+          data-aos="fade-left"
+          data-aos-duration="1500"
         >
-          My name
+          My Name
           <br />
-          is Mahan
-          <span className="dark:text-stroke-dark text-stroke">
+          is {/* The way and colors need to be changed!!! */}
+          <span className="bg-gradient-to-br from-black-russian via-gray-800 to-rich-black from-50% via-70% dark:via-gray-600 to-75% dark:from-gray-400 dark:to-gray-700 bg-clip-text text-transparent">
+            Mahan
+          </span>
+          <span className="text-stroke">
             <br />
             Tavakoli
           </span>
@@ -41,13 +44,13 @@ function Home() {
         <div className="mt-16 min-[450px]:mt-5">
           <button className="btn">
             {/* Link need to be solved! */}
-            <Link
+            <a
               className="flex items-center justify-between gap-x-4"
-              to="#contact"
+              href="#contact"
             >
               <span>Get in Touch</span>
               <HiArrowUpRight className="w-4 h-4" />
-            </Link>
+            </a>
           </button>
         </div>
         <div className="sm:flex sm:justify-between sm:flex-wrap sm:flex-col-reverse lg:gap-x-8 lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0 hidden">

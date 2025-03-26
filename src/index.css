@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-header-title: "Oswald";
-  --font-ibm: "IBM Plex Sans";
+  --font-winky: "Winky Sans";
+  --font-nunito: "Nunito";
   --color-indigo-dye: #00416a;
   --color-black-russian: #0d0b1c;
   --color-rich-black: #030211;
@@ -26,8 +26,6 @@
 @layer components {
   .contact-link {
     @apply relative flex items-center justify-center px-3.5 h-12 rounded-full bg-platinum dark:bg-black-currant border border-rich-black/50 dark:border-dark-grayish-blue text-rich-black/80 dark:text-neutral-200/75 transition-all duration-700 ease-in-out hover:pr-20 hover:justify-baseline cursor-pointer;
-    /* #070d1b => link bg */
-    /* #101624 => container bg */
   }
 
   .contact-homePage-link {
@@ -53,34 +51,9 @@
   mix-blend-mode: difference;
 }
 
-.text-stroke-dark {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--color-green-blue);
-  -webkit-text-fill-color: transparent;
-}
 
 .text-stroke {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--color-caribbean-current);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--color-gray-600);
   -webkit-text-fill-color: transparent;
-}
-
-.number-stroke-dark {
-  background: linear-gradient(
-    270deg,
-    var(--color-indigo-dye) 0%,
-    var(--color-blue-munsell) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.number-stroke {
-  background: linear-gradient(
-    -300deg,
-    var(--color-caribbean-current) 20%,
-    var(--color-persian-green) 100%
-  );
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
