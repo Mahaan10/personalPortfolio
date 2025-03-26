@@ -15,10 +15,7 @@ function Services() {
   }, []);
 
   return (
-    <div
-      className="font-ibm pt-[200px] lg:pt-[100px] pl-5"
-      data-aos="fade-down"
-    >
+    <div className="font-ibm pt-[100px] pl-5" data-aos="fade-down">
       <div className="flex flex-col gap-y-4 font-bold">
         <p className="italic text-lg">My Service</p>
         <p className="uppercase lg:text-5xl text-3xl">My Specialties</p>
@@ -72,7 +69,7 @@ function Accordion() {
           className="border-b border-dark-grayish-blue/30 dark:border-neutral-200/20 mr-4"
         >
           <button
-            className={`w-full flex justify-between items-center p-4 lg:text-2xl text-sm sm:max-md:text-lg md:max-lg:text-xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
+            className={`w-full flex justify-between items-center py-4 lg:text-2xl text-xs sm:max-md:text-lg md:max-lg:text-xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
               openIndex === index
                 ? "number-stroke dark:number-stroke-dark border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
                 : ""

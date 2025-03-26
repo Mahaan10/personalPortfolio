@@ -21,9 +21,9 @@ function Home() {
     <div className="flex justify-between font-ibm ml-4" data-aos="fade-down">
       <div className="flex flex-col pt-[60px] z-50">
         <h1
-          className="lg:text-7xl sm:text-4xl text-3xl font-extrabold uppercase mb-4"
-          data-aos="fade-left"
-          data-aos-duration="1500"
+          className="lg:text-7xl sm:text-4xl text-2xl font-extrabold uppercase mb-4"
+          //data-aos="fade-left"
+          //data-aos-duration="1500"
         >
           My name
           <br />
@@ -33,12 +33,12 @@ function Home() {
             Tavakoli
           </span>
         </h1>
-        <div className="lg:text-3xl sm:text-2xl text-base mb-5">
+        <div className="lg:text-3xl sm:text-2xl text-base mb-5 mt-4 w-44 min-[450px]:w-auto">
           <span className="font-extrabold mr-1.5">Frontend Developer</span>
           based in
           <span className="font-extrabold ml-1.5">Iran</span>
         </div>
-        <div className="mt-5">
+        <div className="mt-16 min-[450px]:mt-5">
           <button className="btn">
             {/* Link need to be solved! */}
             <Link
@@ -50,12 +50,12 @@ function Home() {
             </Link>
           </button>
         </div>
-        <div className="flex justify-between flex-wrap flex-col-reverse gap-x-8 lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0">
-          <div className="flex items-center gap-x-2">
+        <div className="sm:flex sm:justify-between sm:flex-wrap sm:flex-col-reverse lg:gap-x-8 lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0 hidden">
+          <div className="flex items-center gap-x-1">
             <AiOutlineMobile className="w-5 h-5" />
             <span className="text-lg">+98 998 153 0861</span>
           </div>
-          <div className="flex items-center  gap-x-2">
+          <div className="flex items-center gap-x-3">
             <FaRegEnvelope className="w-4 h-4 mt-1" />
             <span className="text-lg">mahantavakolicareer@gmail.com</span>
           </div>
@@ -70,7 +70,7 @@ function Home() {
           data-aos-duration="1500"
         ></div> */}
         <div
-          className="bg-[url('/images/20250310_032629edit.png')] absolute sm:right-0 -right-64 top-0 bottom-0 w-[650px] h-screen bg-contain object-contain bg-no-repeat bg-center rounded-full"
+          className="bg-[url('/images/20250310_032629edit.png')] absolute sm:right-0 -right-52 top-0 bottom-0 w-[650px] h-screen bg-contain bg-no-repeat bg-center rounded-full"
           data-aos="fade-right"
           data-aos-duration="1500"
         ></div>

@@ -31,6 +31,15 @@ const projects = [
     demo: "https://burger-house-restaurant.vercel.app",
     repo: "https://github.com/Mahaan10/burgerHouse",
   },
+  {
+    id: 4,
+    title: "Young Hunter Photography & Gallery",
+    features: "React JS + TailwindCSS",
+    description: "",
+    img: "images/younghunter.png",
+    demo: "https://www.younghunter.net",
+    repo: "https://github.com/Mahaan10/younghunter-frontend",
+  },
 ];
 
 function Portfolio() {
@@ -47,7 +56,7 @@ function Portfolio() {
     <div className="font-ibm pt-[50px] px-5" data-aos="fade-down">
       <div className="flex flex-col gap-y-4 font-bold">
         <p className="italic text-lg">My Work</p>
-        <p className="uppercase text-5xl mb-10">Recent Project</p>
+        <p className="uppercase text-3xl sm:text-5xl mb-10">Recent Project</p>
       </div>
       <div className="grid grid-cols-2 gap-2">
         {projects.map((project) => (

@@ -23,6 +23,7 @@ function About() {
     >
       <div className="lg:w-[42%] flex flex-col items-center space-y-2 justify-center">
         <div className="">
+          {/* Image need to defined! */}
           <img
             src="/images/bulb-on.PNG"
             className="rotate-90 rounded-full w-52 h-52"
@@ -80,10 +81,10 @@ function About() {
           </div>
         </div>
         <div className="border-b opacity-15 border-dark-grayish-blue dark:border-neutral-200 mr-10"></div>
-        <div className="flex items-center gap-x-6 mt-10">
+        <div className="flex items-center gap-x-3 justify-center sm:gap-x-6 mt-10">
           <div className="flex flex-col w-[50%]">
             <div className="flex">
-              <span className="text-5xl pr-3 dark:number-stroke-dark number-stroke">
+              <span className="text-5xl mr-3 dark:number-stroke-dark number-stroke">
                 2+
               </span>
               <div className="flex flex-col font-bold text-lg">
@@ -91,7 +92,7 @@ function About() {
                 <span>experience...</span>
               </div>
             </div>
-            <div className="mt-5 font-light text-lg">
+            <div className="mt-5 font-light mr-1 text-lg">
               <p>
                 Hello there! My name is{" "}
                 <span className="dark:text-blue-munsell text-caribbean-current">
@@ -110,7 +111,7 @@ function About() {
                 <span>included...</span>
               </div>
             </div>
-            <div className="mt-5 font-light text-lg">
+            <div className="mt-5 mr-1 font-light text-lg">
               <p>
                 With 2+ years experience as a professional developer, I have
                 acquired the skills to make your project a success.

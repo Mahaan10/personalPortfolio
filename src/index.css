@@ -35,7 +35,7 @@
   }
 
   .btn {
-    @apply cursor-pointer lg:py-3.5 lg:px-7 py-3 px-5 flex items-center justify-center transition-colors ease-in-out duration-700 -bg-linear-300 from-20% dark:from-indigo-dye dark:to-green-blue to-persian-green from-myrtle-green to-100% rounded-lg font-semibold hover:from-persian-green dark:hover:from-green-blue dark:hover:to-indigo-dye hover:to-myrtle-green hover:from-0% hover:to-50% text-neutral-200;
+    @apply cursor-pointer lg:py-3.5 lg:px-7 py-3  px-2 flex items-center justify-center transition-colors ease-in-out duration-700 -bg-linear-300 from-20% dark:from-indigo-dye dark:to-green-blue to-persian-green from-myrtle-green to-100% rounded-lg font-semibold hover:from-persian-green dark:hover:from-green-blue dark:hover:to-indigo-dye hover:to-myrtle-green hover:from-0% hover:to-50% text-neutral-200;
   }
 }
 
