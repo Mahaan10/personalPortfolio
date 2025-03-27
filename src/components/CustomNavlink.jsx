@@ -16,7 +16,7 @@ function CustomNavlink({ children, to, activeSection, onClose }) {
     <a
       href={to}
       onClick={handleClick}
-      className={`pl-5 pr-3 py-2 relative flex items-center justify-between transition-all duration-700 ease-in-out ${
+      className={`pl-5 pr-3  gap-x-4 py-2 relative flex items-center justify-between transition-all duration-700 ease-in-out ${
         isActive ? "opacity-100" : "opacity-50 hover:opacity-85"
       }`}
     >

@@ -16,6 +16,13 @@ function Home() {
     });
   }, []);
 
+  const getInTouchHandler = (e) => {
+    e.preventDefault();
+    const section = document.getElementById("contact");
+    section.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, "", "#contact");
+  };
+
   return (
     <div className="flex justify-between ml-4" data-aos="fade-down">
       <div className="flex flex-col pt-[60px] z-50">
@@ -45,15 +52,12 @@ function Home() {
           <span className="font-extrabold ml-1.5">Iran</span>
         </div>
         <div className="mt-16 min-[450px]:mt-5">
-          <button className="btn">
-            {/* Link need to be solved! */}
-            <a
-              className="flex items-center justify-between gap-x-4"
-              href="#contact"
-            >
-              <span>Get in Touch</span>
-              <HiArrowUpRight className="w-4 h-4" />
-            </a>
+          <button
+            className="btn flex items-center justify-between gap-x-4"
+            onClick={getInTouchHandler}
+          >
+            <span>Get in Touch</span>
+            <HiArrowUpRight className="w-4 h-4" />
           </button>
         </div>
         <div className="sm:flex sm:justify-between sm:flex-wrap sm:flex-col-reverse lg:gap-x-8 lg:flex-row mt-10 font-bold gap-y-1.5 lg:gap-y-0 hidden">
