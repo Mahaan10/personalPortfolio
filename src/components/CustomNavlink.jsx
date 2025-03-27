@@ -1,4 +1,4 @@
-function CustomNavlink({ children, to, activeSection }) {
+function CustomNavlink({ children, to, activeSection, onClose }) {
   const id = to.replace("#", "");
   const isActive = activeSection === id;
 
@@ -8,6 +8,7 @@ function CustomNavlink({ children, to, activeSection }) {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
       window.history.pushState(null, "", to);
+      onClose();
     }
   };
 

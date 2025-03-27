@@ -2,7 +2,6 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { Link } from "react-router";
 import { FaRegEnvelope } from "react-icons/fa";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
@@ -28,8 +27,12 @@ function Home() {
           My Name
           <br />
           is {/* The way and colors need to be changed!!! */}
-          <span className="bg-gradient-to-br from-black-russian via-gray-800 to-rich-black from-50% via-70% dark:via-gray-600 to-75% dark:from-gray-400 dark:to-gray-700 bg-clip-text text-transparent">
-            Mahan
+          <span>
+            <span className="nameDrop">M</span>
+            <span className="nameDrop">a</span>
+            <span className="nameDrop">h</span>
+            <span className="nameDrop">a</span>
+            <span className="nameDrop">n</span>
           </span>
           <span className="text-stroke">
             <br />
@@ -86,7 +89,7 @@ function Home() {
             data-aos="fade-right"
             data-aos-duration="1500"
           ></div>
-          <ul className="flex flex-col gap-y-2 relative">
+          <ul className="flex flex-col gap-y-2 relative font-winky">
             <li>
               <a
                 href="https://www.instagram.com/mahan__tavakkoli"

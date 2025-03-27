@@ -30,7 +30,7 @@ function About() {
             alt=""
           />
         </div>
-        <p className="lg:text-[45px] text-3xl bg-gradient-to-r from-caribbean-current to-persian-green from-20% to-100% dark:from-indigo-dye dark:to-blue-munsell bg-clip-text text-transparent font-bold mt-7">
+        <p className="lg:text-[45px] text-3xl textStroke bg-clip-text font-bold mt-7">
           Mahan Tavakoli
         </p>
         <p className="lg:text-2xl text-lg mb-5">
@@ -84,9 +84,7 @@ function About() {
         <div className="flex items-center gap-x-3 justify-center sm:gap-x-6 mt-10">
           <div className="flex flex-col items-center justify-center">
             <div className="flex">
-              <span className="text-5xl mr-3 dark:number-stroke-dark number-stroke">
-                2+
-              </span>
+              <span className="text-5xl mr-3 textStroke bg-clip-text">2+</span>
               <div className="flex flex-col font-bold text-lg">
                 <span>Years</span>
                 <span>experience...</span>
@@ -105,7 +103,7 @@ function About() {
           </div>
           <div className="flex flex-col items-center justify-center ">
             <div className="flex items-center">
-              <span className="text-5xl pr-3 number-stroke">5+</span>
+              <span className="text-5xl pr-3 textStroke bg-clip-text">5+</span>
               <div className="flex flex-col font-bold text-lg">
                 <span>Projects</span>
                 <span>included...</span>

@@ -4,11 +4,12 @@ import { FaTelegram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { TbMenuDeep } from "react-icons/tb";
 import DarkModeToggle from "./ThemeMode";
 import { useState, useEffect } from "react";
+import useOutsideClick from "./useOutsideClick";
 
 function Sidebar({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
         setIsOpen(true);
@@ -22,6 +23,18 @@ function Sidebar({ activeSection }) {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const sidebarRef = useOutsideClick(() => {
+    if (isOpen && window.innerWidth < 1024) {
+      setIsOpen(false);
+    }
+  });
+
+  const handleNavLinkClick = () => {
+    if (window.innerWidth < 1024) {
+      setIsOpen(false);
+    }
+  };
 
   return (
     <>
@@ -42,6 +55,7 @@ function Sidebar({ activeSection }) {
         className={`md:w-[325px] w-[284px] flex fixed top-0 bottom-0 lg:left-0 z-40 h-screen bg-silver dark:bg-rich-black flex-col transition-all duration-700 ease-in-out text-lg font-winky ${
           isOpen ? "translate-x-0 left-0" : "-translate-x-full -left-96"
         }`}
+        ref={sidebarRef}
       >
         <div className="pt-10 text-2xl lg:text-3xl items-center justify-center w-full flex">
           <CustomNavlink to="#home">Mahan&apos;s Portfolio</CustomNavlink>
@@ -49,27 +63,47 @@ function Sidebar({ activeSection }) {
         <DarkModeToggle />
         <ul className="flex-1/2 pl-3 font-semibold uppercase mt-28">
           <li>
-            <CustomNavlink to="#home" activeSection={activeSection}>
+            <CustomNavlink
+              to="#home"
+              activeSection={activeSection}
+              onClose={handleNavLinkClick}
+            >
               Home
             </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="#about" activeSection={activeSection}>
+            <CustomNavlink
+              to="#about"
+              activeSection={activeSection}
+              onClose={handleNavLinkClick}
+            >
               About
             </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="#services" activeSection={activeSection}>
+            <CustomNavlink
+              to="#services"
+              activeSection={activeSection}
+              onClose={handleNavLinkClick}
+            >
               Services
             </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="#portfolio" activeSection={activeSection}>
+            <CustomNavlink
+              to="#portfolio"
+              activeSection={activeSection}
+              onClose={handleNavLinkClick}
+            >
               Portfolio
             </CustomNavlink>
           </li>
           <li>
-            <CustomNavlink to="#contact" activeSection={activeSection}>
+            <CustomNavlink
+              to="#contact"
+              activeSection={activeSection}
+              onClose={handleNavLinkClick}
+            >
               Contact
             </CustomNavlink>
           </li>

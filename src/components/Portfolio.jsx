@@ -37,7 +37,7 @@ const projects = [
     features: "React JS + TailwindCSS",
     description: "",
     img: "images/younghunter.png",
-    demo: "https://www.younghunter.net",
+    demo: "http://younghunter.net/",
     repo: "https://github.com/Mahaan10/younghunter-frontend",
   },
 ];
@@ -58,7 +58,7 @@ function Portfolio() {
         <p className="italic text-lg">My Work</p>
         <p className="uppercase text-3xl sm:text-5xl mb-10">Recent Project</p>
       </div>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {projects.map((project) => (
           <div
             key={project.id}

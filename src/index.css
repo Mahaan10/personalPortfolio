@@ -35,6 +35,14 @@
   .btn {
     @apply cursor-pointer lg:py-3.5 lg:px-7 py-3  px-2 flex items-center justify-center transition-colors ease-in-out duration-700 -bg-linear-300 from-20% dark:from-indigo-dye dark:to-green-blue to-persian-green from-myrtle-green to-100% rounded-lg font-semibold hover:from-persian-green dark:hover:from-green-blue dark:hover:to-indigo-dye hover:to-myrtle-green hover:from-0% hover:to-50% text-neutral-200;
   }
+
+  .nameDrop {
+    @apply bg-gradient-to-b text-transparent bg-clip-text dark:from-silver dark:to-eerie-black from-50% to-100% from-zinc-900 to-dark-grayish-blue
+  }
+
+  .textStroke {
+    @apply bg-gradient-to-r from-caribbean-current to-persian-green from-20% to-100% dark:from-indigo-dye dark:to-blue-munsell text-transparent
+  }
 }
 
 .custom-cursor {
@@ -53,7 +61,7 @@
 
 
 .text-stroke {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--color-gray-600);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: linear-gradient(90deg, var(--color-silver) 50%, var(--color-eerie-black) 100%) ;
   -webkit-text-fill-color: transparent;
 }

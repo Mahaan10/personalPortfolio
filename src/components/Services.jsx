@@ -69,23 +69,23 @@ function Accordion() {
           className="border-b border-dark-grayish-blue/30 dark:border-neutral-200/20 mr-4"
         >
           <button
-            className={`w-full flex justify-between items-center py-4 lg:text-2xl text-xs sm:max-md:text-lg md:max-lg:text-xl font-semibold cursor-pointer uppercase transition-colors duration-700 ${
+            className={`w-full flex justify-between items-center py-4 lg:text-2xl text-xs sm:max-md:text-lg md:max-lg:text-xl font-semibold cursor-pointer uppercase transition-colors duration-700 px-1.5 ${
               openIndex === index
-                ? "number-stroke dark:number-stroke-dark border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
+                ? "textStroke text-inherit rounded border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
                 : ""
             }`}
             onClick={() => toggleAccordion(index)}
           >
             {item.title}
             <span
-              className={`transform transition-transform duration-300 ${
+              className={`transform transition-transform duration-700 ${
                 openIndex === index ? "rotate-180" : "rotate-0"
               }`}
             >
               {openIndex === index ? (
-                <CgMathMinus className="lg:w-10 lg:h-10 md:max-lg:w-7 md:max-lg:h-7 w-6 h-6" />
+                <CgMathMinus className="lg:w-10 lg:h-10 md:max-lg:w-7 md:max-lg:h-7 w-5 h-5" />
               ) : (
-                <BsPlusLg className="lg:w-10 lg:h-10 md:max-lg:w-7 md:max-lg:h-7 w-6 h-6" />
+                <BsPlusLg className="lg:w-10 lg:h-10 md:max-lg:w-7 md:max-lg:h-7 w-5 h-5" />
               )}
             </span>
           </button>

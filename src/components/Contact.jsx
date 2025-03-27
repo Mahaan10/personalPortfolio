@@ -28,7 +28,7 @@ function Contact() {
       <div className="flex flex-col gap-y-4">
         <div className="flex-col flex gap-y-4 font-bold mb-6">
           <p className="italic text-lg">Contact</p>
-          <p className="uppercase text-5xl">Get in Touch</p>
+          <p className="uppercase text-3xl sm:text-5xl">Get in Touch</p>
         </div>
         <div className="flex flex-col gap-y-60 items-center justify-between">
           <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-x-6 lg:flex-row">
@@ -48,7 +48,7 @@ function Contact() {
                 className="flex items-center justify-end w-full mt-4"
                 data-aos="fade-right"
               >
-                <div className="flex gap-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[95%] min-[450px]:w-[330px]">
+                <div className="flex gap-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[95%] min-[450px]:w-[330px] font-winky">
                   <a
                     href="https://t.me/MaahanTavakoli"
                     target="_blank"
@@ -112,7 +112,7 @@ function Contact() {
                 className="flex items-center justify-end w-full mt-4"
                 data-aos="fade-right"
               >
-                <div className="flex gap-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[95%] min-[450px]:w-[330px]">
+                <div className="flex gap-x-4 bg-silver dark:bg-rich-black border border-cadet-gray dark:border-dark-grayish-blue border-r-0 border-b-0 rounded-l-full p-2 w-[95%] min-[450px]:w-[330px] font-winky">
                   <a
                     className="group contact-link"
                     href="https://github.com/Mahaan10"
