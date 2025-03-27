@@ -71,7 +71,7 @@ function Accordion() {
           <button
             className={`w-full flex justify-between items-center py-4 lg:text-2xl text-xs sm:max-md:text-lg md:max-lg:text-xl font-semibold cursor-pointer uppercase transition-colors duration-700 px-1.5 ${
               openIndex === index
-                ? "textStroke text-inherit rounded border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
+                ? "textStroke text-neutral-200 dark:text-inherit rounded border-b border-dark-grayish-blue/30 dark:border-neutral-200/20"
                 : ""
             }`}
             onClick={() => toggleAccordion(index)}
